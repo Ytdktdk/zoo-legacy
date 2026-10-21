@@ -5,3 +5,5 @@
 | Windows 10/11 | GTX 1050, 8 GB RAM | ✅ Pass | Основная целевая платформа |
 | macOS (M1/M2) | Apple Silicon, 8 GB RAM | ⚠️ Partial | Требуется проверка шейдеров Metal |
 | WebGL (Браузер) | Chrome/Firefox (последние версии) | ⚠️ Partial | Лимит животных на сцене: не более 200 из-за памяти браузера |
+| Linux (Ubuntu 22.04 LTS) | Аналогично Windows, через Vulkan/OpenGL | ✅ Pass | Запуск проходит стабильно через встроенную поддержку Vulkan. Звуковая система работает через PulseAudio.|
+
