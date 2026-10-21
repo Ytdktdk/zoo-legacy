@@ -1,0 +1,488 @@
+/* === ZOO LEGACY CYBER-BIO STYLE === */
+
+QMainWindow {
+    background-color: #0b0f19;
+}
+
+QWidget#centralWidget {
+    background-color: transparent;
+}
+
+/* Кнопки по умолчанию */
+QPushButton {
+    background-color: #1a2436;
+    color: #ffffff;
+    border: 1px solid #38bdf8;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #00e5ff;
+    color: #0b0f19;
+    border: 1px solid #00e5ff;
+}
+
+QPushButton:pressed {
+    background-color: #00ff88;
+    color: #0b0f19;
+}
+
+/* Боковое меню */
+QListWidget {
+    background-color: #111827;
+    color: #e5e7eb;
+    border: 1px solid #1a2436;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+QListWidget::item {
+    padding: 18px 22px;
+    border-bottom: 1px solid #1f2937;
+    margin: 2px;
+}
+
+QListWidget::item:selected {
+    background-color: rgba(0, 255, 136, 0.15);
+    color: #00ff88;
+    border-left: 3px solid #00ff88;
+}
+
+QListWidget::item:hover {
+    background-color: rgba(0, 229, 255, 0.1);
+    color: #00e5ff;
+}
+
+/* Тексты */
+QLabel {
+    color: #e5e7eb;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Прокрутка */
+QScrollArea {
+    border: none;
+    background-color: transparent;
+}
+
+QScrollBar:vertical {
+    background: #111827;
+    width: 8px;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical {
+    background: #1a2436;
+    border-radius: 4px;
+    min-height: 30px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #00e5ff;
+}
+
+/* Таблицы */
+QTableWidget {
+    background-color: #111827;
+    color: #e5e7eb;
+    gridline-color: #1f2937;
+    border: 1px solid #1a2436;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+QHeaderView::section {
+    background-color: #1f2937;
+    color: #00e5ff;
+    padding: 6px;
+    border: 1px solid #111827;
+    font-weight: bold;
+}
+
+/* Диалоги */
+QDialog {
+    background-color: #0b0f19;
+}
+
+QMessageBox QLabel {
+    color: #e5e7eb;
+}
+
+/* Выпадающие списки */
+QComboBox {
+    background-color: #1a2436;
+    color: #ffffff;
+    border: 1px solid #38bdf8;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 13px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #111827;
+    color: #ffffff;
+    selection-background-color: #00ff88;
+    selection-color: #0b0f19;
+}
+
+/* Прогресс-бары */
+QProgressBar {
+    border: 1px solid #1a2436;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #111827;
+    color: #ffffff;
+    min-height: 20px;
+}
+
+QProgressBar::chunk {
+    background-color: #00ff88;
+}
+
+/* Группы */
+QGroupBox {
+    color: #00e5ff;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #1a2436;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 5px;
+    left: 10px;
+}
+
+/* === ГЛАВНОЕ МЕНЮ === */
+
+QWidget#startScreen {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #0a0a1a, stop:0.5 #1a1a3e, stop:1 #0f3460);
+}
+
+/* === ОСНОВНОЕ ОКНО ИГРЫ === */
+
+QWidget#gameWindow {
+    background-color: #0b0f19;
+}
+
+/* Заголовки секций */
+QLabel#sectionTitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00ff88;
+}
+
+QLabel#breedingTitle {
+    font-size: 32px;
+    font-weight: bold;
+    color: #9C27B0;
+}
+
+QLabel#eventsTitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #2196F3;
+}
+
+/* Шапка с информацией */
+QFrame#headerFrame {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #0f9b0f, stop:1 #4CAF50);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+QFrame#infoPanel {
+    background: rgba(0,0,0,0.3);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+/* Статистика */
+QLabel#dayLabel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #90EE90;
+}
+
+QLabel#balanceLabel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+QLabel#energyLabel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #42A5F5;
+}
+
+QLabel#levelLabel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FF9800;
+}
+
+QLabel#scienceLabel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #9C27B0;
+}
+
+QLabel#incomeLabel {
+    font-size: 14px;
+    font-weight: bold;
+    color: #90EE90;
+}
+
+/* Кнопка следующего дня */
+QPushButton#nextDayBtn {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #FF9800, stop:1 #FFB74D);
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 12px;
+    border: none;
+    min-width: 200px;
+}
+
+QPushButton#nextDayBtn:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #FFB74D, stop:1 #FFCC80);
+}
+
+/* Кнопка паузы */
+QPushButton#pauseBtn {
+    background-color: #EF4444;
+    color: white;
+    border: 2px solid #DC2626;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QPushButton#pauseBtn:hover {
+    background-color: #DC2626;
+}
+
+/* Карточки животных */
+QFrame#animalCard {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #16213e, stop:1 #0f3460);
+    border-radius: 15px;
+    border: 3px solid #808080;
+}
+
+QFrame#animalCardCommon {
+    border-color: #808080;
+}
+
+QFrame#animalCardUncommon {
+    border-color: #4CAF50;
+}
+
+QFrame#animalCardRare {
+    border-color: #2196F3;
+}
+
+QFrame#animalCardEpic {
+    border-color: #9C27B0;
+}
+
+QFrame#animalCardLegendary {
+    border-color: #FFD700;
+}
+
+QLabel#animalPhoto {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #1a1a2e, stop:1 #16213e);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 100px;
+    color: #00e5ff;
+}
+
+QWidget#animalInfo {
+    background: transparent;
+}
+
+QLabel#animalName {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e8e8e8;
+}
+
+QLabel#animalRarity {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+QLabel#animalRarityCommon { color: #808080; }
+QLabel#animalRarityUncommon { color: #4CAF50; }
+QLabel#animalRarityRare { color: #2196F3; }
+QLabel#animalRarityEpic { color: #9C27B0; }
+QLabel#animalRarityLegendary { color: #FFD700; }
+
+QLabel#animalSpecies {
+    font-size: 13px;
+    color: #a0a0a0;
+}
+
+QLabel#animalHealth {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+QLabel#animalHunger {
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFA500;
+}
+
+QLabel#animalIncome {
+    font-size: 14px;
+    font-weight: bold;
+    color: #90EE90;
+}
+
+/* Пустое сообщение */
+QLabel#emptyMessage {
+    font-size: 20px;
+    color: #888;
+    padding: 50px;
+}
+
+/* Лаборатория */
+QWidget#breedingScreen {
+    background: transparent;
+}
+
+QLabel#breedingDesc {
+    font-size: 16px;
+    color: #a0a0a0;
+}
+
+QPushButton#breedingBtn {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #9C27B0, stop:1 #BA68C8);
+    color: white;
+    padding: 20px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: none;
+}
+
+QPushButton#breedingBtn:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #BA68C8, stop:1 #CE93D8);
+}
+
+/* Журнал событий */
+QWidget#eventsScreen {
+    background: transparent;
+}
+
+QFrame#eventItem {
+    background: rgba(255,255,255,0.05);
+    border-left: 4px solid #4CAF50;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+QLabel#eventDay {
+    font-size: 13px;
+    color: #888;
+    min-width: 70px;
+}
+
+QLabel#eventType {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4CAF50;
+    min-width: 120px;
+}
+
+QLabel#eventDesc {
+    font-size: 14px;
+    color: #e8e8e8;
+}
+
+QLabel#eventAmount {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+/* === ЛАБОРАТОРИЯ СКРЕЩИВАНИЯ === */
+
+QDialog#breedingDialog {
+    background-color: #0b0f19;
+}
+
+QLabel#genesDisplay {
+    font-size: 12px;
+    color: #8da2fb;
+    font-family: "Consolas", monospace;
+    padding: 5px;
+}
+
+QProgressBar#matchBar::chunk {
+    background-color: #00ff88;
+}
+
+QLabel#matchLabel {
+    font-size: 13px;
+    color: #00e5ff;
+    padding: 5px;
+}
+
+QLabel#reagentInfo {
+    font-size: 12px;
+    color: #a0a0a0;
+    padding: 5px;
+}
+
+QProgressBar#breedingProgress::chunk {
+    background-color: #9C27B0;
+}
+
+QLabel#breedingStatus {
+    font-size: 14px;
+    color: #00e5ff;
+    padding: 10px;
+}
+
+QPushButton#breedActionBtn {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #9C27B0, stop:1 #BA68C8);
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+
+QPushButton#breedActionBtn:hover {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #BA68C8, stop:1 #CE93D8);
+}
+
+QPushButton#cancelBtn {
+    background-color: #1a2436;
+    color: #ffffff;
+    border: 1px solid #EF4444;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+QPushButton#cancelBtn:hover {
+    background-color: #EF4444;
+    color: white;
+}
